@@ -36,8 +36,48 @@ a.pdf {
   background-size: 20px;
 }
 table{
-  background-color: rgb(255, 255, 255);
+  border-spacing: 0px;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
 }
-table tr:nth-child(odd){
+
+table tr:nth-child(even){
   background-color: rgb(155, 158, 155);
+}
+
+table tr{
+  color: black;
+  border: 3px solid black;
+}
+
+table td{
+  color: black;
+  border: 3px solid black;
+}
+
+td.css{
+  background: url(css3.png) no-repeat left center;
+}
+
+td.html{
+  background: url(html5.png) no-repeat left center;
+}
+
+td.css, td.html{
+  background-size: 50px 50px;
+  padding-left: 53px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  vertical-align: center;
+}
+
+.css:active, .html:active{
+  background-color: #FFFF66;
+}
+
+span{
+  font-family: Comic;
+  font-style: italic;
+  color: black;
 }
