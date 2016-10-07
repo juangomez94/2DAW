@@ -57,7 +57,7 @@ img{
 #pie .copyright{
   float:right;
 }
-#cabecera,#menu,#lateral,#lateral #noticias,#lateral #publicidad,#contenido,#contenido #principal,#contenido #secundario,#pie{
+#cabecera,#menu,#lateral,#lateral #noticias,#lateral #publi,#contenido,#contenido #principal,#contenido #secundario,#pie{
   padding:.5em;
 }
 #lateral{
@@ -84,6 +84,6 @@ img{
 #contenido #principal .articulo img{
   margin:.5em;
 }
-#lateral #publicidad{
+#lateral #publi{
   margin-top:1em;
 }
