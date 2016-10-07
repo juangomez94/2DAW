@@ -81,3 +81,7 @@ span{
   font-style: italic;
   color: black;
 }
+
+td.html5{
+  vertical-align: bottom;
+}
