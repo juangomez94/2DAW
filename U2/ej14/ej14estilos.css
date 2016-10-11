@@ -1,0 +1,13 @@
+input {
+  border-radius: 5px;
+  float: 50px;
+}
+
+input:focus {
+  border-color: rgb(159, 0, 251);
+  background-color: rgb(158, 158, 158);
+}
+
+textarea{
+  height: 40px;
+}
