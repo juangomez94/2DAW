@@ -35,6 +35,7 @@ ul.menu li a:hover {
 
 ul.submenu {
   list-style-type:square;
+  color: green;
 }
 
 li ul.submenu {
@@ -43,6 +44,7 @@ li ul.submenu {
 
 li:hover ul.submenu{
   display:block;
+  background: #F4F4F4;
 }
 
 li ul li.submenu{

@@ -1,13 +1,44 @@
 input {
   border-radius: 5px;
-  float: 50px;
+
 }
 
 input:focus {
-  border-color: rgb(159, 0, 251);
+  outline-color: purple;
   background-color: rgb(158, 158, 158);
 }
 
-textarea{
+textarea {
   height: 40px;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+textarea:focus {
+  outline-color: purple;
+  background-color: rgb(158, 158, 158);
+}
+
+select {
+  border-radius: 5px;
+}
+
+select:focus {
+  outline-color: purple;
+  background-color: rgb(158, 158, 158);
+}
+
+label {
+  width: 12%;
+  float: left;
+}
+
+p.nota {
+  font-style: italic;
+  border: 2px dotted black;
+  padding: 1em;
+}
+
+input.pass {
+  height: 10mm;
 }
