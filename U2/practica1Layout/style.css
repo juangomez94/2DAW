@@ -22,7 +22,6 @@ body {
   border: 1px solid lightgray;
   padding: 20px;
   vertical-align: middle;
-  text-align: center;
 }
 
 #menu {
@@ -109,4 +108,53 @@ figcaption {
   width: 120px;
   height: 40px;
   vertical-align: middle;
+  margin-right: 10px;
+}
+
+li.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+li.menu a:hover {
+  color: linen;
+}
+
+ul li.submenu {
+  display: none;
+}
+
+li.menu:hover li {
+  display: block;
+  padding-left: 20px;
+}
+
+#submenu:hover {
+  color: linen;
+}
+-----------
+li.menuLat {
+  list-style-type: none;
+}
+
+li.menuLat a {
+  text-decoration: none;
+  color: black;
+}
+
+li.menuLat a:hover {
+  color: linen;
+}
+
+ul.submenuLat {
+  display: none;
+}
+
+li.menuLat:hover ul {
+  display: block;
+  padding-left: 20px;
+}
+
+#submenuLat:hover {
+  color: linen;
 }
