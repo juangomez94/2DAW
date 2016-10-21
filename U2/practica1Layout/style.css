@@ -12,7 +12,7 @@ body {
 }
 
 #container {
-  width: 960px;
+  width: 100%;
   margin: 15px auto;
   text-align: left;
 }
@@ -21,12 +21,13 @@ body {
   background: lightblue;
   border: 1px solid lightgray;
   padding: 20px;
-  vertical-align: middle;
+  text-align: center;
 }
 
 #menu {
   background: #CCCCCC;
   padding: 5px 15px;
+  text-align: center;
 }
 
 #menu li {
@@ -38,14 +39,15 @@ body {
 
 #seccion {
   float: left;
-  width: 660px;
+  width: 48.31%;
   margin: 20px;
+  padding-left: 20%;
 }
 
 #columna {
   float: left;
-  width: 220px;
-  margin:  20px 0px;
+  width: 16.11%;
+  margin: 20px 0px;
   padding: 20px;
   background: #CCCCCC;
 }
@@ -111,30 +113,57 @@ figcaption {
   margin-right: 10px;
 }
 
+/*MENU*/
+
 li.menu a {
   text-decoration: none;
   color: black;
+}
+
+li.menu:hover {
+  background: gray;
 }
 
 li.menu a:hover {
   color: linen;
 }
 
-ul li.submenu {
+#submenu {
   display: none;
+  background: lightgray;
 }
 
-li.menu:hover li {
-  display: block;
-  padding-left: 20px;
+ul li.menu:hover ul#submenu {
+  display: inline-block;
+  position: absolute;
+  margin-top: 5px;
 }
 
-#submenu:hover {
+#submenu li:hover {
+  background: gray;
   color: linen;
 }
------------
+
+#submenu2 {
+  display: none;
+  background: lightgray;
+}
+
+#submenu1:hover ul#submenu2 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 5px;
+}
+
+#submenu2 li:hover {
+  background: gray;
+  color: linen;
+}
+
+/*MENULAT*/
 li.menuLat {
   list-style-type: none;
+  margin: 5px;
 }
 
 li.menuLat a {
@@ -144,10 +173,13 @@ li.menuLat a {
 
 li.menuLat a:hover {
   color: linen;
+  background: gray;
 }
 
 ul.submenuLat {
+  list-style-type: disc;
   display: none;
+  margin: 10px;
 }
 
 li.menuLat:hover ul {
@@ -157,4 +189,6 @@ li.menuLat:hover ul {
 
 #submenuLat:hover {
   color: linen;
+  background: gray;
+  margin: 5px;
 }
