@@ -7,8 +7,9 @@
 
 /*Estilo base*/
 body {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: 'Bree Serif', sans-serif;
 }
+
 .header {
   background-color: #9933cc;
   color: #ffffff;
@@ -78,7 +79,7 @@ section {
 }
 
 /********** Dispositivos grandes **********/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .col-lg-1 {width: 8.33%;}
   .col-lg-2 {width: 16.66%;}
   .col-lg-3 {width: 25%;}
@@ -91,6 +92,37 @@ section {
   .col-lg-10 {width: 83.33%;}
   .col-lg-11 {width: 91.66%;}
   .col-lg-12 {width: 100%;}
+  .pub img {
+    margin-top: 10px;
+    width: 100%;
+    border-color: #33b5e5;
+  }
+  .logo img {
+    width: 120px;
+  }
+}
+
+/* Para dispositivos medianos: */
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 74.99%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+  .pub img {
+    display: none;
+  }
+  .logo img{
+    width: 80px;
+  }
 }
 
 /* Para dispositivos pequeños: */
@@ -98,10 +130,10 @@ section {
   [class*="col-"] {
     width: 100%;
   }
-}
-
-@import url('http://fonts.googleapis.com/css?family=Tangerine');
-
-h1 {
-  font-family: 'Tangerine', sans-serif;
+  .pub img{
+    display: none;
+  }
+  .logo img{
+    width: 50px;
+  }
 }

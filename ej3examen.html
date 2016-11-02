@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var n = Math.floor(Math.random()*9+1);
+      function cuenta(){
+        if (n < 0) {
+          clearInterval();
+          window.close();
+        }
+        document.body.innerHTML = n;
+        n--;
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.write(setInterval(cuenta,3000));
+    </script>
+  </body>
+</html>
