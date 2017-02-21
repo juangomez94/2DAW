@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.tituloGeneros{
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.generos {
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.celdaGeneros {
+  width: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+div img.imagenGeneros {
+  background-color: lightgray;
+  padding: 10%;
+  width: 100%;
+  border-radius: 100%;
+  margin-bottom: 10%;
+}
+
+
+
+a.enlacesGeneros p {
+  visibility: hidden;
+}
+
+a.enlacesGeneros:hover p {
+  margin-left: 40%;
+  animation-duration: 2s;
+  animation-name: slidein;
+  visibility: visible;
+}
+
+a.enlacesGeneros:hover img.imagenGeneros {
+  border: 5px solid black;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 45%;
+    width: 50%;
+  }
+}
+
+a.enlacesGeneros{
+  color: black;
+}
+
+a.enlacesGeneros:hover {
+  text-decoration: none;
+  color: black;
+}
+
+body.bodyGeneros{
+  font-family: 'Amatic SC', cursive;
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.fotos {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#textoGeneros {
+  margin-top: 9%;
+  width: 80%;
+}
